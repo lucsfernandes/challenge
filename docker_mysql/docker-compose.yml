@@ -1,0 +1,17 @@
+version: '2'
+services:
+  mysql-going2:
+    image: mysql:8.0.23
+    command: mysqld --default-authentication-plugin=mysql_native_password
+    container_name: mysql-going2
+    restart: unless-stopped
+    tty: true
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: going2_challenge
+      MYSQL_USER: going2
+      MYSQL_PASSWORD: ch@llenge
+      MYSQL_ROOT_PASSWORD: root_password
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql

@@ -1,0 +1,26 @@
+{
+  "name": "the-shortest-url",
+  "version": "1.0.0",
+  "description": "Going2 Challenge: URL Encode and Decode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js",
+    "run-migration": "knex migrate:latest"
+  },
+  "keywords": [
+    "encode",
+    "decode",
+    "url"
+  ],
+  "author": "Lucas Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "knex": "^1.0.3",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "shortid": "^2.2.16"
+  }
+}
